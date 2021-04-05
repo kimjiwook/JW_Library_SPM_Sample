@@ -1,2 +1,3 @@
-# JW_Library_SPM_Sample
-JW_Library_SPM_Sample
+# JWLibrary
+
+A description of this package.
