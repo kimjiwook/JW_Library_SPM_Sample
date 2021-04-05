@@ -26,4 +26,9 @@ public class JWUtil {
     func getUUID() -> String {
         return UIDevice.current.identifierForVendor?.uuidString ?? ""
     }
+    
+    /// Class func으로는 ? 접근되나
+    class func getTemp() -> String {
+        return UIDevice.current.identifierForVendor?.uuidString ?? ""
+    }
 }
