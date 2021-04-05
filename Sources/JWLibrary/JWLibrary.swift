@@ -1,3 +1,5 @@
+import UIKit
+
 struct JWLibrary {
     var text = "Hello, World!"
 }
@@ -15,13 +17,13 @@ public protocol JWViewProtocol {
 }
 
 /// 2. Util 성 Class 추가
-class JWUtil {
+public class JWUtil {
     /// 싱글턴 객체
     public static let shared = JWUtil()
     
     /// UUID 가져오기
     /// - Returns: String
     func getUUID() -> String {
-        return ""
+        return UIDevice.current.identifierForVendor?.uuidString ?? ""
     }
 }
