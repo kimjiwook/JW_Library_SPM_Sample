@@ -21,14 +21,18 @@ open class JWUtil {
     /// 싱글턴 객체
     public static let shared = JWUtil()
     
+    // 변수 테스트
+    public let jwText1 = "public 접근"
+    let jwText2 = "일반 접근"
+    
     /// UUID 가져오기
     /// - Returns: String
-    func getUUID() -> String {
+    public func getUUID() -> String {
         return UIDevice.current.identifierForVendor?.uuidString ?? ""
     }
     
-    /// Class func으로는 ? 접근되나
-    class func getTemp() -> String {
+    /// func으로는 ? 접근되나
+    func getTemp() -> String {
         return UIDevice.current.identifierForVendor?.uuidString ?? ""
     }
 }
