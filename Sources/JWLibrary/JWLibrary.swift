@@ -17,7 +17,7 @@ public protocol JWViewProtocol {
 }
 
 /// 2. Util 성 Class 추가
-public class JWUtil {
+open class JWUtil {
     /// 싱글턴 객체
     public static let shared = JWUtil()
     
