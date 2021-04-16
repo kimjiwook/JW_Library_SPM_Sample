@@ -21,6 +21,11 @@ open class JWUtil {
     /// 싱글턴 객체
     public static let shared = JWUtil()
     
+    /// 생성자 추가.
+    init() {
+        
+    }
+    
     // 변수 테스트
     public let jwText1 = "public 접근"
     let jwText2 = "일반 접근"
@@ -34,5 +39,11 @@ open class JWUtil {
     /// func으로는 ? 접근되나
     func getTemp() -> String {
         return UIDevice.current.identifierForVendor?.uuidString ?? ""
+    }
+}
+
+public class JWUtil2 {
+    init() {
+        
     }
 }
