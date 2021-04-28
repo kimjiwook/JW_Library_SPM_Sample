@@ -7,8 +7,8 @@
 /*
  ViewController 접근 확인
  https://developer.apple.com/documentation/swift_packages/bundling_resources_with_a_swift_package
- // 처리
- https://useyourloaf.com/blog/add-resources-to-swift-packages/
+ // 처리 주소
+ http://minsone.github.io/programming/bundling-resources-with-a-swift-package
  */
 
 import UIKit
@@ -21,7 +21,7 @@ open class JWViewController: UIViewController {
     
     /// 생성자 추가.
     open class func instanse() -> JWViewController {
-        let desc = JWViewController(nibName: "JWViewController", bundle: nil)
+        let desc = JWViewController(nibName: "JWViewController", bundle: .module)
         return desc
     }
 }
