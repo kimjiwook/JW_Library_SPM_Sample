@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JWViewController" customModule="JWLibrary">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JWViewController" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="iN0-l3-epB" id="gPk-2H-DyZ"/>
             </connections>
@@ -42,11 +42,11 @@
                 <constraint firstItem="kqj-j9-v62" firstAttribute="centerX" secondItem="pEN-PO-Bie" secondAttribute="centerX" id="ieN-Lm-QD2"/>
                 <constraint firstItem="pEN-PO-Bie" firstAttribute="top" secondItem="kqj-j9-v62" secondAttribute="bottom" constant="132" id="pO2-aH-kml"/>
             </constraints>
-            <point key="canvasLocation" x="125" y="125"/>
+            <point key="canvasLocation" x="-17" y="201"/>
         </view>
     </objects>
     <resources>
-        <image name="icTabNotifiNone" width="128" height="128"/>
+        <image name="icTabNotifiNone" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

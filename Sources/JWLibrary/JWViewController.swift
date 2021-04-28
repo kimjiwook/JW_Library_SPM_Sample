@@ -15,4 +15,10 @@ open class JWViewController: UIViewController {
     open override func viewDidLoad() {
         
     }
+    
+    /// 생성자 추가.
+    open func instanse() -> JWViewController {
+        let desc = JWViewController(nibName: "JWViewController", bundle: nil)
+        return desc
+    }
 }
