@@ -17,7 +17,7 @@ open class JWViewController: UIViewController {
     }
     
     /// 생성자 추가.
-    open func instanse() -> JWViewController {
+    open class func instanse() -> JWViewController {
         let desc = JWViewController(nibName: "JWViewController", bundle: nil)
         return desc
     }
