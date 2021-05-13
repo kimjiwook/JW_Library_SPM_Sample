@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "JWLibrary",
     platforms: [
-        .iOS(.v11) // <- 최소사용버전 (라이브러리 추가됨에 따라 필요로함)
+        .iOS(.v14) // <- 최소사용버전 (라이브러리 추가됨에 따라 필요로함)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.

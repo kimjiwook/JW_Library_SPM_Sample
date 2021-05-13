@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JWViewController" customModuleProvider="target">
             <connections>
+                <outlet property="btn01" destination="bu6-xE-ife" id="8oI-RJ-h4r"/>
+                <outlet property="btn02" destination="ZcO-kv-wqM" id="f7B-jC-imm"/>
+                <outlet property="btn03" destination="1xS-zA-qFv" id="O58-ff-4Ps"/>
+                <outlet property="btn04" destination="fdQ-JM-nJ5" id="9tY-rK-h4h"/>
+                <outlet property="btn05" destination="XyL-Ww-jNy" id="fyL-J2-B8k"/>
                 <outlet property="view" destination="iN0-l3-epB" id="gPk-2H-DyZ"/>
             </connections>
         </placeholder>
@@ -19,12 +23,37 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LUp-Mq-kPf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu6-xE-ife">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <state key="normal" title="SPM [01] 블로그 글 이동"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcO-kv-wqM">
+                            <rect key="frame" x="0.0" y="30" width="414" height="30"/>
+                            <state key="normal" title="SPM [02] 블로그 글 이동"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xS-zA-qFv">
+                            <rect key="frame" x="0.0" y="60" width="414" height="30"/>
+                            <state key="normal" title="SPM [03] 블로그 글 이동"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-JM-nJ5">
+                            <rect key="frame" x="0.0" y="90" width="414" height="30"/>
+                            <state key="normal" title="SPM [04] 블로그 글 이동"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyL-Ww-jNy">
+                            <rect key="frame" x="0.0" y="120" width="414" height="30"/>
+                            <state key="normal" title="SPM [05] 블로그 글 이동"/>
+                        </button>
+                    </subviews>
+                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEN-PO-Bie">
                     <rect key="frame" x="185" y="438" width="44" height="30"/>
                     <state key="normal" title="버튼!!!!"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPM에 등록된 ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqj-j9-v62">
-                    <rect key="frame" x="99.5" y="285" width="215" height="21"/>
+                    <rect key="frame" x="99.5" y="285.5" width="215" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -39,8 +68,11 @@
             <constraints>
                 <constraint firstItem="pEN-PO-Bie" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="4oj-W3-yaK"/>
                 <constraint firstItem="pEN-PO-Bie" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="VC0-sN-gkw"/>
+                <constraint firstItem="LUp-Mq-kPf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hX6-Zq-mY9"/>
                 <constraint firstItem="kqj-j9-v62" firstAttribute="centerX" secondItem="pEN-PO-Bie" secondAttribute="centerX" id="ieN-Lm-QD2"/>
                 <constraint firstItem="pEN-PO-Bie" firstAttribute="top" secondItem="kqj-j9-v62" secondAttribute="bottom" constant="132" id="pO2-aH-kml"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LUp-Mq-kPf" secondAttribute="trailing" id="xYa-1N-ogr"/>
+                <constraint firstItem="LUp-Mq-kPf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zfr-oe-eQ7"/>
             </constraints>
             <point key="canvasLocation" x="-17" y="201"/>
         </view>
